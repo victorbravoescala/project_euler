@@ -20,7 +20,6 @@ int isPrime(q)
 }
 
 int main (void) {
-
 	long p;
 	long q;
 	int result;
