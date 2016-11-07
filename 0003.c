@@ -24,11 +24,12 @@ int main (void) {
 	long q;
 	int result;
 
-	p = 13195;
+	p = 600851475143;
 	q = (p + 1) / 2;
 
 	while (q != 0) {
 		if (p % q == 0) {
+			printf("%ld is a divisor of %ld.\n", q, p);
 			result = isPrime(q);
 		}
 		if (result == 1) {
