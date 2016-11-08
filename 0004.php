@@ -21,6 +21,20 @@
 
 	function isPalindrome($x)
 	{
-		
+		$result = 1;
+		$str = (string)$x;
+		echo $str . "\n";
+		$arr = str_split($str, 1);
+		$l = count($arr);
+		echo $l;
+		if ($l % 2 == 0) {
+			for ($i = 0; $i < $l/2; $i++) {
+				if ($arr[$i] != $arr[$l - $i] {
+					$result = 0;
+				}
+			}
+		} else {
+			
+		}
 	}
 ?>
