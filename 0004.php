@@ -22,20 +22,16 @@
 	{
 		$result = 1;
 		$str = (string)$x;
-		echo "string " . $str . "\n";
 		$arr = str_split($str, 1);
 		$l = count($arr);
-		echo "l " . $l . "\n";
 		if ($l % 2 == 0) {
 			for ($i = 0; $i < $l/2; $i++) {
-				echo "i " . $arr[$i] . "\n";
 				if ($arr[$i] != $arr[$l - 1 - $i]) {
 					$result = 0;
 				}
 			}
 		} else {
 			for ($i = 0; $i < ($l - 1)/2; $i++) {
-				echo "i " . $arr[$i] . "\n";
 				if ($arr[$i] != $arr[$l - 1 - $i]) {
 					$result = 0;
 				}
